@@ -1,3 +1,11 @@
+@font-face {
+  font-family: Poor Story;
+  src: url("../assets/fonts/PoorStory-Regular.ttf") format("truetype");
+}
+* {
+  font-family: Poor Story;
+  font-weight: bold;
+}
 html {
   height: 100%;
 }
@@ -17,6 +25,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
 }
 .content {
   width: 100%;
