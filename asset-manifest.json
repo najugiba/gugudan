@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/gugudan/static/css/main.6e4ee951.chunk.css",
+    "main.js": "/gugudan/static/js/main.b025f027.chunk.js",
+    "main.js.map": "/gugudan/static/js/main.b025f027.chunk.js.map",
+    "runtime-main.js": "/gugudan/static/js/runtime-main.23eeb030.js",
+    "runtime-main.js.map": "/gugudan/static/js/runtime-main.23eeb030.js.map",
+    "static/js/2.cab64cab.chunk.js": "/gugudan/static/js/2.cab64cab.chunk.js",
+    "static/js/2.cab64cab.chunk.js.map": "/gugudan/static/js/2.cab64cab.chunk.js.map",
+    "index.html": "/gugudan/index.html",
+    "precache-manifest.9009a112e8f7c6ceeea07722046504e2.js": "/gugudan/precache-manifest.9009a112e8f7c6ceeea07722046504e2.js",
+    "service-worker.js": "/gugudan/service-worker.js",
+    "static/css/main.6e4ee951.chunk.css.map": "/gugudan/static/css/main.6e4ee951.chunk.css.map",
+    "static/js/2.cab64cab.chunk.js.LICENSE.txt": "/gugudan/static/js/2.cab64cab.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/gugudan/static/media/PoorStory-Regular.9d7aae2d.ttf",
+    "static/media/mongkey.png": "/gugudan/static/media/mongkey.de7d8b29.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.23eeb030.js",
+    "static/js/2.cab64cab.chunk.js",
+    "static/css/main.6e4ee951.chunk.css",
+    "static/js/main.b025f027.chunk.js"
+  ]
+}
