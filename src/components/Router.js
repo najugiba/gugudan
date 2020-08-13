@@ -12,14 +12,19 @@ import Testing from "../routes/Testing";
 import Home from "../routes/Home";
 
 export default () => (
-  <Router>
-    <Switch>
-      <Route path="/" exact component={Home} />
-      <Route path="/gugudan" component={Gugudan} />
-      <Route path="/testing" component={Testing} />
-      <Route path="/practice" component={Practice} />
-      <Route path="/grade" component={Grade} />
-      <Redirect from="*" to="/" />
-    </Switch>
-  </Router>
+  <>
+    <header className="App-header">
+      <span>구구단 게임</span>
+    </header>
+    <Router className="app-content">
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/gugudan" component={Gugudan} />
+        <Route path="/testing" component={Testing} />
+        <Route path="/practice" component={Practice} />
+        <Route path="/grade" component={Grade} />
+        <Redirect from="*" to="/" />
+      </Switch>
+    </Router>
+  </>
 );
