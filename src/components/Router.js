@@ -16,15 +16,17 @@ export default () => (
     <header className="App-header">
       <span>구구단 게임</span>
     </header>
-    <Router className="app-content">
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/gugudan" component={Gugudan} />
-        <Route path="/testing" component={Testing} />
-        <Route path="/practice" component={Practice} />
-        <Route path="/grade" component={Grade} />
-        <Redirect from="*" to="/" />
-      </Switch>
-    </Router>
+    <div className="app-content">
+      <Router>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/gugudan" component={Gugudan} />
+          <Route path="/testing" component={Testing} />
+          <Route path="/practice" component={Practice} />
+          <Route path="/grade" component={Grade} />
+          <Redirect from="*" to="/" />
+        </Switch>
+      </Router>
+    </div>
   </>
 );

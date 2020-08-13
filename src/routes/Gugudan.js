@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Wrapper = styled.div`
   display: flex;
   height: 100%;
-  padding: 0 20px;
+  padding: 0 200px;
 `;
 
 const Column = styled.div`
@@ -14,8 +14,15 @@ const Column = styled.div`
   justify-content: center;
   align-items: center;
 `;
+const Formulas = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 100px);
+  gap: 20px 20px;
+`;
 
-const Formulas = styled.div``;
+const Formula = styled.div`
+  font-size: 25px;
+`;
 
 const Button = styled.div`
   display: flex;
@@ -32,7 +39,8 @@ const Button = styled.div`
 
 const Gugudan = () => {
   const nums = [2, 3, 4, 5, 6, 7, 8, 9];
-  const [select, setSelect] = useState(3);
+  const operand = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  const [select, setSelect] = useState(nums[0]);
 
   useEffect(() => {
     console.log("Gugudan -> select", select);
@@ -41,7 +49,13 @@ const Gugudan = () => {
   return (
     <Wrapper>
       <Column>
-        <Formulas></Formulas>
+        <Formulas>
+          {operand.map((i) => (
+            <Formula key={i}>
+              {select} x {i} = {select * i}
+            </Formula>
+          ))}
+        </Formulas>
       </Column>
 
       <Column>
